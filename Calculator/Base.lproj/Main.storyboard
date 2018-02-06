@@ -18,54 +18,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="kFm-AC-MaG">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="kFm-AC-MaG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="625"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Input Number Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8BE-yY-QVI">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="41"/>
                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83X-3x-qxx">
-                                        <rect key="frame" x="0.0" y="113" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="67" width="375" height="60"/>
                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="clearScreenAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqa-hT-Yc7"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8b-BE-L6g">
-                                        <rect key="frame" x="0.0" y="195" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="153" width="375" height="60"/>
                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="pressAddButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kjg-Og-YbE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fd-ce-hqH">
-                                        <rect key="frame" x="0.0" y="277" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="239" width="375" height="60"/>
                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="-"/>
+                                        <connections>
+                                            <action selector="pressSubtractButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m9c-Wf-54B"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dE5-y5-tM3">
-                                        <rect key="frame" x="0.0" y="359" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="325" width="375" height="60"/>
                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="*"/>
+                                        <connections>
+                                            <action selector="pressMultiplyButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Qh-oW-PSI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33h-dz-ZoS">
-                                        <rect key="frame" x="0.0" y="441" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="411" width="375" height="60"/>
                                         <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="/"/>
+                                        <connections>
+                                            <action selector="pressDivideButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xyL-Dd-DvD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yiR-Eb-NGO">
-                                        <rect key="frame" x="0.0" y="523" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="497" width="375" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Calculate"/>
+                                        <connections>
+                                            <action selector="calculateAnswerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gce-Oa-KFJ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJq-wu-XQh">
-                                        <rect key="frame" x="0.0" y="605" width="375" height="42"/>
+                                        <rect key="frame" x="0.0" y="583" width="375" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                         <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -75,13 +93,17 @@
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kFm-AC-MaG" secondAttribute="trailing" id="Oyu-bK-W6W"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kFm-AC-MaG" secondAttribute="bottom" id="Zhc-6E-Jxj"/>
-                            <constraint firstItem="kFm-AC-MaG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fr3-Sx-Prx"/>
-                            <constraint firstItem="kFm-AC-MaG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tTB-uT-dNj"/>
+                            <constraint firstItem="kFm-AC-MaG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="79c-y8-I2i"/>
+                            <constraint firstItem="kFm-AC-MaG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Bhw-Kp-68W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kFm-AC-MaG" secondAttribute="trailing" id="xEA-y1-Utc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kFm-AC-MaG" secondAttribute="bottom" constant="22" id="yrO-7v-LyR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="8BE-yY-QVI" id="Tzb-nx-A9N"/>
+                        <outlet property="outputLabel" destination="lJq-wu-XQh" id="SRR-Gh-blY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
